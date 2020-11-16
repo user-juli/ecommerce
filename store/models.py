@@ -16,8 +16,8 @@ class Product(models.Model):
     image = models.ImageField(null=True, blank=True)
     stock = models.IntegerField()
 
-    def __str__(self):
-        return self.name
+  #  def __str__(self):
+    #    return self.name
 
     @property
     def imageURL(self):
@@ -77,5 +77,5 @@ class ShippingAddress(models.Model):
     zipcode = models.CharField(max_length=200, null=False)
     date_added = models.DateTimeField(auto_now_add=True)
 
-    def __str__(self):
-        return self.address
+    #def __str__(self):
+    #    return self.address
